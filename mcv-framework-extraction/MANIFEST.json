@@ -1,0 +1,77 @@
+{
+  "package": "mcv-framework-extraction",
+  "version": "1.0.0",
+  "source": "agentic-skills-framework (Superpowers by @obra)",
+  "extraction_date": "2026-01-22",
+  "description": "Extracted patterns, frameworks, and skill structures for MCV NAOS integration",
+  "contents": {
+    "orchestration": {
+      "file": "orchestration/orchestration-patterns.md",
+      "description": "Workflow pipeline, subagent-driven development, parallel dispatch, HITL checkpoints"
+    },
+    "agents": {
+      "file": "agents/agent-composition-patterns.md",
+      "description": "Agent types, communication protocol, coordination patterns, prompt best practices"
+    },
+    "composition": {
+      "file": "composition/skill-framework.md",
+      "description": "Skill architecture, skill TDD, bulletproofing, cross-skill references"
+    },
+    "patterns": {
+      "file": "patterns/quality-gates.md",
+      "description": "TDD, verification before completion, systematic debugging, testing anti-patterns"
+    },
+    "memory": {
+      "file": "memory/context-patterns.md",
+      "description": "Context injection, progressive loading, token efficiency, venture-scoped memory"
+    }
+  },
+  "key_patterns": [
+    {
+      "name": "Subagent-Driven Development",
+      "priority": "P0",
+      "description": "Fresh agent per task + two-stage review (spec then quality)",
+      "mcv_application": "NAOS Executor, Queen/Ralph orchestration"
+    },
+    {
+      "name": "Two-Stage Review Gate",
+      "priority": "P0",
+      "description": "Spec compliance review BEFORE code quality review",
+      "mcv_application": "All skill implementations, quality gates"
+    },
+    {
+      "name": "Context Injection Pattern",
+      "priority": "P1",
+      "description": "Controller provides ALL context, subagent never reads files",
+      "mcv_application": "Multi-agent orchestration, token efficiency"
+    },
+    {
+      "name": "Skill TDD",
+      "priority": "P1",
+      "description": "Test skills with pressure scenarios before deployment",
+      "mcv_application": "All new skill development"
+    },
+    {
+      "name": "Rationalization Prevention",
+      "priority": "P1",
+      "description": "Bulletproof discipline skills against rationalization",
+      "mcv_application": "Governance, compliance skills"
+    }
+  ],
+  "source_skills": [
+    "brainstorming",
+    "writing-plans",
+    "executing-plans",
+    "subagent-driven-development",
+    "dispatching-parallel-agents",
+    "test-driven-development",
+    "systematic-debugging",
+    "verification-before-completion",
+    "requesting-code-review",
+    "receiving-code-review",
+    "using-git-worktrees",
+    "finishing-a-development-branch",
+    "writing-skills",
+    "using-superpowers"
+  ]
+}
